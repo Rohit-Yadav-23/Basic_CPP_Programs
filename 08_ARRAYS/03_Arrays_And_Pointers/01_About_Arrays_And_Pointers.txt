@@ -1,0 +1,21 @@
+
+
+    int arr[] = {10, 20, 30, 40, 50, 60};
+
+    int *ptr = arr;             ✔️
+    int *ptr = &arr;            ❌
+
+    int *ptr = &arr[0];         ✔️
+    int *ptr = arr[0];          ❌
+
+
+
+
+    for Normal variable                                 but for arrays
+
+    int x = 6;                                          int arr[] = {10, 20, 30, 40, 50, 60};
+
+    int *ptr = &x;             ✔️                       int *ptr = &arr;            ❌  
+    int *ptr = x;              ❌                       int *ptr = arr;             ✔️
+
+    To check this, go to 01_Example_1.cpp program
